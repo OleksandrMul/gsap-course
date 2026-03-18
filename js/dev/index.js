@@ -4045,6 +4045,6 @@ gsap.registerPlugin(CSSPlugin);
 var gsapWithCSS = gsap.registerPlugin(CSSPlugin) || gsap;
 gsapWithCSS.core.Tween;
 function gsapInit() {
-  gsapWithCSS.to(".title", { x: 500 });
+  gsapWithCSS.to("#freds img", { y: -50, stagger: { amount: 0.1, from: "center" } });
 }
 document.querySelector("[data-fls-gsap]") ? window.addEventListener("load", gsapInit) : null;
